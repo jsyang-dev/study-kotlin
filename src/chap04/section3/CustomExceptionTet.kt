@@ -1,0 +1,20 @@
+package chap04.section3
+
+class InvalidNameException(message: String) : Exception(message)
+
+fun main() {
+    var name = "Kildong123"
+
+    try {
+        validName(name)
+    } catch (e: InvalidNameException) {
+        println(e.message)
+    } catch (e: Exception) {
+        println(e.message)
+    }
+}
+
+fun validName(name: String) {
+    if (name.matches(Regex(".*\\d+.*")))
+        throw InvalidNameException("Your name: $name: contains numerals")
+}
