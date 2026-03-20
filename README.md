@@ -28,13 +28,13 @@ Issue → Branch → Implement → PR (Closes #N) → AI Review → Fix → Re-r
 
 | Level | Title | Issue |
 |-------|-------|-------|
-| 1 | 프로젝트 초기 설정 및 Health Check API | #TBD |
-| 2 | 게시글 도메인 모델 및 JPA 엔티티 설정 | #TBD |
-| 3 | 게시글 생성 API (POST) | #TBD |
-| 4 | 게시글 조회 API (GET 목록 + 단건) | #TBD |
-| 5 | 게시글 수정 API (PUT) | #TBD |
-| 6 | 게시글 삭제 API (DELETE) 및 Soft Delete 구현 | #TBD |
-| 7 | 유효성 검사, 페이지네이션 및 검색 | #TBD |
+| 1 | 프로젝트 초기 설정 및 Health Check API | [#1](https://github.com/jsyang-dev/study-kotlin/issues/1) |
+| 2 | 게시글 도메인 모델 및 JPA 엔티티 설정 | [#2](https://github.com/jsyang-dev/study-kotlin/issues/2) |
+| 3 | 게시글 생성 API (POST) | [#3](https://github.com/jsyang-dev/study-kotlin/issues/3) |
+| 4 | 게시글 조회 API (GET 목록 + 단건) | [#4](https://github.com/jsyang-dev/study-kotlin/issues/4) |
+| 5 | 게시글 수정 API (PUT) | [#5](https://github.com/jsyang-dev/study-kotlin/issues/5) |
+| 6 | 게시글 삭제 API (DELETE) 및 Soft Delete 구현 | [#6](https://github.com/jsyang-dev/study-kotlin/issues/6) |
+| 7 | 유효성 검사, 페이지네이션 및 검색 | [#7](https://github.com/jsyang-dev/study-kotlin/issues/7) |
 
 ## 비용 안내
 
