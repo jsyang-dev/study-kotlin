@@ -1,0 +1,35 @@
+name: Code Quest 학습 기능
+description: Code Quest 학습 기능 이슈
+title: "[Level N] 기능 제목"
+labels: ["learning", "code-quest"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 학습 기능
+  - type: textarea
+    id: description
+    attributes:
+      label: "설명"
+      description: "구현할 내용"
+    validations:
+      required: true
+  - type: textarea
+    id: objectives
+    attributes:
+      label: "학습 목표"
+      description: "배울 내용"
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "완료 기준"
+      description: "완료 체크리스트"
+    validations:
+      required: true
+  - type: textarea
+    id: hints
+    attributes:
+      label: "힌트 (선택)"
+      description: "시작에 도움이 되는 팁"
