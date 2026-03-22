@@ -1,3 +1,3 @@
-package me.study.kotlin.controller
+package me.study.kotlin.dto
 
 data class HealthResponse(val status: String)
