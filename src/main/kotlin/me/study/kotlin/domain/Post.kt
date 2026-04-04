@@ -13,13 +13,17 @@ class Post(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long? = null,
 
+    @Column(nullable = false)
     var title: String,
 
+    @Column(nullable = false, columnDefinition = "TEXT")
     var content: String,
 
+    @Column(nullable = false)
     var author: String,
 
     @CreatedDate
+    @Column(updatable = false)
     var createdAt: LocalDateTime? = null,
 
     @LastModifiedDate
