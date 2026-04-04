@@ -1,28 +1,27 @@
 package me.study.kotlin.domain
 
-import jakarta.persistence.Entity
-import jakarta.persistence.GeneratedValue
-import jakarta.persistence.GenerationType
-import jakarta.persistence.Id
+import jakarta.persistence.*
 import org.springframework.data.annotation.CreatedDate
 import org.springframework.data.annotation.LastModifiedDate
+import org.springframework.data.jpa.domain.support.AuditingEntityListener
 import java.time.LocalDateTime
 
 @Entity
+@EntityListeners(AuditingEntityListener::class)
 class Post(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long,
+    var id: Long,
 
-    val title: String,
+    var title: String,
 
-    val content: String,
+    var content: String,
 
-    val author: String,
+    var author: String,
 
     @CreatedDate
-    val createdAt: LocalDateTime,
+    var createdAt: LocalDateTime,
 
     @LastModifiedDate
-    val updatedAt: LocalDateTime
+    var updatedAt: LocalDateTime
 )
