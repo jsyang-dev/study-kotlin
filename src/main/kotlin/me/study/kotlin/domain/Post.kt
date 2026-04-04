@@ -11,7 +11,7 @@ import java.time.LocalDateTime
 class Post(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: Long,
+    var id: Long? = null,
 
     var title: String,
 
@@ -20,8 +20,8 @@ class Post(
     var author: String,
 
     @CreatedDate
-    var createdAt: LocalDateTime,
+    var createdAt: LocalDateTime? = null,
 
     @LastModifiedDate
-    var updatedAt: LocalDateTime
+    var updatedAt: LocalDateTime? = null
 )
